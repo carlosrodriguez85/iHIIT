@@ -161,15 +161,11 @@
 		8ED688581CC7A6500005C938 /* iHIIT WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8ED688801CC7E37F0005C938 /* HCYoutubeParser.h */,
-				8ED688811CC7E37F0005C938 /* HCYoutubeParser.m */,
-				8ED688791CC7D9D20005C938 /* ExerciseRowController.swift */,
-				8ED688751CC7A8AF0005C938 /* Exercise.swift */,
-				8ED6885B1CC7A6500005C938 /* InterfaceController.swift */,
-				8ED6887B1CC7DB9B0005C938 /* ExercisesInterfaceController.swift */,
-				8ED6887D1CC7DD960005C938 /* DescriptionInterfaceController.swift */,
+				8ED688851CC7E7F70005C938 /* Model */,
+				8ED688841CC7E7DA0005C938 /* Interface Controllers */,
+				8ED688861CC7E8020005C938 /* Row Controllers */,
+				8ED688831CC7E7CF0005C938 /* Utils */,
 				8ED6885D1CC7A6500005C938 /* ExtensionDelegate.swift */,
-				8ED688611CC7A6500005C938 /* GlanceController.swift */,
 				8ED688631CC7A6500005C938 /* Assets.xcassets */,
 				8ED688651CC7A6500005C938 /* Info.plist */,
 				8ED688591CC7A6500005C938 /* Supporting Files */,
@@ -184,6 +180,42 @@
 				8ED6885A1CC7A6500005C938 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ED688831CC7E7CF0005C938 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8ED688801CC7E37F0005C938 /* HCYoutubeParser.h */,
+				8ED688811CC7E37F0005C938 /* HCYoutubeParser.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		8ED688841CC7E7DA0005C938 /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8ED688611CC7A6500005C938 /* GlanceController.swift */,
+				8ED6885B1CC7A6500005C938 /* InterfaceController.swift */,
+				8ED6887B1CC7DB9B0005C938 /* ExercisesInterfaceController.swift */,
+				8ED6887D1CC7DD960005C938 /* DescriptionInterfaceController.swift */,
+			);
+			name = "Interface Controllers";
+			sourceTree = "<group>";
+		};
+		8ED688851CC7E7F70005C938 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ED688751CC7A8AF0005C938 /* Exercise.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8ED688861CC7E8020005C938 /* Row Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8ED688791CC7D9D20005C938 /* ExerciseRowController.swift */,
+			);
+			name = "Row Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
