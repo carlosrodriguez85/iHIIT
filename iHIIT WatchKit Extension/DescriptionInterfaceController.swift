@@ -25,7 +25,13 @@ class DescriptionInterfaceController: WKInterfaceController {
             
             self.setTitle(exercise.name)
             descriptionLabel.setText(exercise.description)
-            movie.setMovieURL(exercise.videoURL)
+            
+            if let videoURL = exercise.videoURL{
+                movie.setMovieURL(videoURL)
+            }
+            else{
+                movie.setHidden(true)
+            }
         }
     }
 

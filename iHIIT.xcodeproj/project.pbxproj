@@ -24,6 +24,7 @@
 		8ED6887A1CC7D9D20005C938 /* ExerciseRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688791CC7D9D20005C938 /* ExerciseRowController.swift */; };
 		8ED6887C1CC7DB9B0005C938 /* ExercisesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6887B1CC7DB9B0005C938 /* ExercisesInterfaceController.swift */; };
 		8ED6887E1CC7DD960005C938 /* DescriptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6887D1CC7DD960005C938 /* DescriptionInterfaceController.swift */; };
+		8ED688821CC7E37F0005C938 /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688811CC7E37F0005C938 /* HCYoutubeParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,9 @@
 		8ED688791CC7D9D20005C938 /* ExerciseRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRowController.swift; sourceTree = "<group>"; };
 		8ED6887B1CC7DB9B0005C938 /* ExercisesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesInterfaceController.swift; sourceTree = "<group>"; };
 		8ED6887D1CC7DD960005C938 /* DescriptionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionInterfaceController.swift; sourceTree = "<group>"; };
+		8ED6887F1CC7E37E0005C938 /* iHIIT WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHIIT WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8ED688801CC7E37F0005C938 /* HCYoutubeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCYoutubeParser.h; sourceTree = "<group>"; };
+		8ED688811CC7E37F0005C938 /* HCYoutubeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCYoutubeParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 		8ED688581CC7A6500005C938 /* iHIIT WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8ED688801CC7E37F0005C938 /* HCYoutubeParser.h */,
+				8ED688811CC7E37F0005C938 /* HCYoutubeParser.m */,
 				8ED688791CC7D9D20005C938 /* ExerciseRowController.swift */,
 				8ED688751CC7A8AF0005C938 /* Exercise.swift */,
 				8ED6885B1CC7A6500005C938 /* InterfaceController.swift */,
@@ -174,6 +180,7 @@
 		8ED688591CC7A6500005C938 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8ED6887F1CC7E37E0005C938 /* iHIIT WatchKit Extension-Bridging-Header.h */,
 				8ED6885A1CC7A6500005C938 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -321,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED6887E1CC7DD960005C938 /* DescriptionInterfaceController.swift in Sources */,
+				8ED688821CC7E37F0005C938 /* HCYoutubeParser.m in Sources */,
 				8ED6887A1CC7D9D20005C938 /* ExerciseRowController.swift in Sources */,
 				8ED688761CC7A8AF0005C938 /* Exercise.swift in Sources */,
 				8ED6885E1CC7A6500005C938 /* ExtensionDelegate.swift in Sources */,
@@ -461,12 +469,15 @@
 		8ED688691CC7A6500005C938 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "iHIIT WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iHIIT WatchKit Extension/iHIIT WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -475,12 +486,14 @@
 		8ED6886A1CC7A6500005C938 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "iHIIT WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iHIIT WatchKit Extension/iHIIT WatchKit Extension-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -559,6 +572,7 @@
 				8ED6886A1CC7A6500005C938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED6886C1CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +581,7 @@
 				8ED6886E1CC7A6500005C938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED688701CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +590,7 @@
 				8ED688721CC7A6500005C938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
