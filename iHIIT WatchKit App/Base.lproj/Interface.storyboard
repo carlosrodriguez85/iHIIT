@@ -90,7 +90,7 @@
         <!--Training-->
         <scene sceneID="aj4-mr-FDt">
             <objects>
-                <controller title="Training" id="noe-tg-Ltd">
+                <controller title="Training" id="noe-tg-Ltd" customClass="TrainingInterfaceController" customModule="iHIIT_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.29999999999999999" alignment="left" id="Rau-fV-yli">
                             <items>
@@ -109,6 +109,11 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="exerciseDescription" destination="G8w-Gt-H9T" id="UZj-AB-D17"/>
+                        <outlet property="exerciseTitle" destination="6pJ-ir-cdS" id="37Y-hM-WFH"/>
+                        <outlet property="timer" destination="NPD-Yg-CkY" id="Hkl-3q-MIE"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="686" y="-173"/>
