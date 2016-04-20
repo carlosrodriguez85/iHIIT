@@ -21,6 +21,7 @@
 		8ED688601CC7A6500005C938 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6885F1CC7A6500005C938 /* NotificationController.swift */; };
 		8ED688621CC7A6500005C938 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688611CC7A6500005C938 /* GlanceController.swift */; };
 		8ED688641CC7A6500005C938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED688631CC7A6500005C938 /* Assets.xcassets */; };
+		8ED688761CC7A8AF0005C938 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688751CC7A8AF0005C938 /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		8ED688611CC7A6500005C938 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		8ED688631CC7A6500005C938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ED688651CC7A6500005C938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED688751CC7A8AF0005C938 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		8ED688581CC7A6500005C938 /* iHIIT WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8ED688751CC7A8AF0005C938 /* Exercise.swift */,
 				8ED6885B1CC7A6500005C938 /* InterfaceController.swift */,
 				8ED6885D1CC7A6500005C938 /* ExtensionDelegate.swift */,
 				8ED6885F1CC7A6500005C938 /* NotificationController.swift */,
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED688601CC7A6500005C938 /* NotificationController.swift in Sources */,
+				8ED688761CC7A8AF0005C938 /* Exercise.swift in Sources */,
 				8ED6885E1CC7A6500005C938 /* ExtensionDelegate.swift in Sources */,
 				8ED6885C1CC7A6500005C938 /* InterfaceController.swift in Sources */,
 				8ED688621CC7A6500005C938 /* GlanceController.swift in Sources */,
