@@ -17,27 +17,40 @@ class HIITInterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        
         timer.setDate(NSDate(timeIntervalSinceNow: 10))
         performSelector(#selector(beginTraining), withObject: nil, afterDelay: 10)
         timer.start()
     }
 
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
+    }
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        
+        stopTimer()
+    }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+        stopTimer()
+        return self
     }
     
     func beginTraining() {
         presentControllerWithName("TrainingInterfaceController", context: self)
+        stopTimer()
+    }
+    
+    private func stopTimer() {
+        NSObject.cancelPreviousPerformRequestsWithTarget(self)
+        timer.setDate(NSDate())
+        timer.stop()
     }
 
     @IBAction func beginTapped() {
-        NSObject.cancelPreviousPerformRequestsWithTarget(self)
+        stopTimer()
     }
 }

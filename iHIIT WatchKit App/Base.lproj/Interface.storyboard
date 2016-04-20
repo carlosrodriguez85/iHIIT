@@ -27,7 +27,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <segue destination="zTZ-hc-Lki" kind="modal" id="19K-g7-mEw"/>
+                                        <segue destination="zTZ-hc-Lki" kind="push" id="19K-g7-mEw"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" id="d9X-Cg-uvB">
@@ -38,7 +38,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <segue destination="5BM-D2-9L4" kind="modal" id="6Xc-z1-v1G"/>
+                                        <segue destination="5BM-D2-9L4" kind="push" id="6Xc-z1-v1G"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" verticalAlignment="bottom" title="Credits" id="lhr-f1-Kkw">
@@ -65,7 +65,7 @@
                                 </label>
                                 <button width="1" alignment="left" verticalAlignment="center" title="Begin Now!" id="dZH-Nf-LaV">
                                     <connections>
-                                        <action selector="beginTapped" destination="zTZ-hc-Lki" id="XzH-84-ULo"/>
+                                        <action selector="beginTapped" destination="zTZ-hc-Lki" id="mki-2x-Tzd"/>
                                         <segue destination="noe-tg-Ltd" kind="modal" id="xW9-dH-BVD"/>
                                     </connections>
                                 </button>
