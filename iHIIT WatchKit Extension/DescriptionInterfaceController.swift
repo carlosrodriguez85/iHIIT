@@ -24,13 +24,21 @@ class DescriptionInterfaceController: WKInterfaceController {
             self.exercise = exercise
             
             self.setTitle(exercise.name)
-            descriptionLabel.setText(exercise.description)
+            self.descriptionLabel.setText(exercise.description)
             
             if let videoURL = exercise.videoURL{
-                movie.setMovieURL(videoURL)
+                self.movie.setMovieURL(videoURL)
+                HCYoutubeParser.thumbnailForYoutubeURL(exercise.youtubeURL, thumbnailSize: YouTubeThumbnailDefaultMedium, completeBlock: { (image, error) in
+                    if error == nil {
+                        self.movie.setPosterImage(WKImage(image: image))
+                    }
+                    else{
+                        self.movie.setPosterImage(WKImage(imageName: "hiit_background"))
+                    }
+                })
             }
             else{
-                movie.setHidden(true)
+                self.movie.setHidden(true)
             }
         }
     }

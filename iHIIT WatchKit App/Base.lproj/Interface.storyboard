@@ -149,7 +149,7 @@
                 <controller title="Description" id="6ae-5c-DD4" customClass="DescriptionInterfaceController" customModule="iHIIT_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Exercise Description" numberOfLines="0" id="MPh-o4-lij"/>
-                        <movie width="1" height="100" alignment="center" verticalAlignment="center" posterImage="hiit_background" id="0Eh-Ko-Sap"/>
+                        <movie width="1" height="100" alignment="center" verticalAlignment="center" id="0Eh-Ko-Sap"/>
                     </items>
                     <connections>
                         <outlet property="descriptionLabel" destination="MPh-o4-lij" id="toP-qT-t43"/>
