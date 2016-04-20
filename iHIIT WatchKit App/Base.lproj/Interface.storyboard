@@ -116,7 +116,7 @@
         <!--Exercises-->
         <scene sceneID="ym3-YK-xfQ">
             <objects>
-                <controller title="Exercises" id="5BM-D2-9L4">
+                <controller title="Exercises" id="5BM-D2-9L4" customClass="ExercisesInterfaceController" customModule="iHIIT_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="2yp-fz-Kek">
                             <items>
@@ -133,6 +133,9 @@
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="2yp-fz-Kek" id="W2a-xa-Ai0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="428" y="119"/>
