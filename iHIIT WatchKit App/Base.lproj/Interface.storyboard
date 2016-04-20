@@ -146,11 +146,15 @@
         <!--Description-->
         <scene sceneID="TUK-6f-Y3R">
             <objects>
-                <controller title="Description" id="6ae-5c-DD4">
+                <controller title="Description" id="6ae-5c-DD4" customClass="DescriptionInterfaceController" customModule="iHIIT_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Exercise Description" numberOfLines="0" id="MPh-o4-lij"/>
                         <movie width="1" height="100" alignment="center" verticalAlignment="center" posterImage="hiit_background" id="0Eh-Ko-Sap"/>
                     </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="MPh-o4-lij" id="toP-qT-t43"/>
+                        <outlet property="movie" destination="0Eh-Ko-Sap" id="dyZ-Wb-aFm"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="688" y="121"/>
