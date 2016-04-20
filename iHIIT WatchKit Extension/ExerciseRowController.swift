@@ -6,8 +6,16 @@
 //  Copyright © 2016 Everyware Technologies. All rights reserved.
 //
 
-import Foundation
+import WatchKit
 
 class ExerciseRowController : NSObject {
+    @IBOutlet var titleLabel: WKInterfaceLabel!
     
+    var exercise:Exercise? {
+        didSet{
+            if let exercise = self.exercise{
+                self.titleLabel.setText(exercise.name)
+            }
+        }
+    }
 }
