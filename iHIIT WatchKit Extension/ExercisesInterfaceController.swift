@@ -34,5 +34,8 @@ class ExercisesInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        return Exercise.exercises[rowIndex]
+    }
 }
