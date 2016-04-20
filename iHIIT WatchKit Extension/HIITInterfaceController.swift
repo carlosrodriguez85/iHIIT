@@ -9,8 +9,11 @@
 import WatchKit
 import Foundation
 
+protocol TrainingDelegate {
+    func trainingDidEnd()
+}
 
-class HIITInterfaceController: WKInterfaceController {
+class HIITInterfaceController: WKInterfaceController, TrainingDelegate {
     @IBOutlet var timer: WKInterfaceTimer!
     
     override func awakeWithContext(context: AnyObject?) {
@@ -52,5 +55,9 @@ class HIITInterfaceController: WKInterfaceController {
 
     @IBAction func beginTapped() {
         stopTimer()
+    }
+    
+    func trainingDidEnd() {
+        popController()
     }
 }

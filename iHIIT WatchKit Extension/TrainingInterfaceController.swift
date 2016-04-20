@@ -16,11 +16,15 @@ class TrainingInterfaceController: WKInterfaceController {
     @IBOutlet var exerciseDescription: WKInterfaceLabel!
     
     private var exerciseIndex:Int = 0
+    private var delegate:TrainingDelegate? = nil
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        if let delegate = context as? TrainingDelegate {
+            self.delegate = delegate
+        }
     }
 
     override func willActivate() {
@@ -35,10 +39,13 @@ class TrainingInterfaceController: WKInterfaceController {
         super.didDeactivate()
         
         NSObject.cancelPreviousPerformRequestsWithTarget(self) //avoid delayed "performSelector" call after deactivating the controller
+        
+        delegate?.trainingDidEnd()
     }
 
     func showExercise() {
         guard exerciseIndex < Exercise.exercises.count else {
+            delegate?.trainingDidEnd()
             dismissController()
             return
         }
