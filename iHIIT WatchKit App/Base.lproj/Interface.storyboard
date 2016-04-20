@@ -5,6 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
+        <!--Credits-->
+        <scene sceneID="b5u-94-EBB">
+            <objects>
+                <controller title="Credits" id="Pgy-av-VPt"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="319"/>
+        </scene>
         <!--iHIIT-->
         <scene sceneID="aou-V4-d1y">
             <objects>
@@ -19,6 +26,9 @@
                                             <label alignment="center" verticalAlignment="center" text="Start HIIT" textAlignment="left" baselineAdjustment="alignCenters" id="E5v-vv-sRy"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <segue destination="zTZ-hc-Lki" kind="push" id="19K-g7-mEw"/>
+                                    </connections>
                                 </button>
                                 <button alignment="left" id="d9X-Cg-uvB">
                                     <group key="contentGroup" width="1" alignment="left" id="EOC-ad-ygu">
@@ -27,14 +37,35 @@
                                             <label alignment="center" verticalAlignment="center" text="Exercises" id="A8X-5p-xF2"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <segue destination="5BM-D2-9L4" kind="push" id="6Xc-z1-v1G"/>
+                                    </connections>
                                 </button>
-                                <button width="1" alignment="left" verticalAlignment="bottom" title="Credits" id="lhr-f1-Kkw"/>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Credits" id="lhr-f1-Kkw">
+                                    <connections>
+                                        <segue destination="Pgy-av-VPt" kind="modal" id="iA1-Fc-PEB"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="99" y="-13"/>
+        </scene>
+        <!--HIIT-->
+        <scene sceneID="Ufq-Id-oe8">
+            <objects>
+                <controller title="HIIT" id="zTZ-hc-Lki"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="-173"/>
+        </scene>
+        <!--Exercises-->
+        <scene sceneID="ym3-YK-xfQ">
+            <objects>
+                <controller title="Exercises" id="5BM-D2-9L4"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="119"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -50,7 +81,7 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="105" y="675"/>
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
