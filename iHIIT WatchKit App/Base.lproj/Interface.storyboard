@@ -116,7 +116,17 @@
         <!--Exercises-->
         <scene sceneID="ym3-YK-xfQ">
             <objects>
-                <controller title="Exercises" id="5BM-D2-9L4"/>
+                <controller title="Exercises" id="5BM-D2-9L4">
+                    <items>
+                        <table alignment="left" id="2yp-fz-Kek">
+                            <items>
+                                <tableRow identifier="ExerciseRow" id="a1m-zI-vxc" customClass="ExerciseRowController" customModule="iHIIT_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="yVa-mu-edT"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="428" y="119"/>
         </scene>
