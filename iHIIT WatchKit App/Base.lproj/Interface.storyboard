@@ -56,9 +56,62 @@
         <!--HIIT-->
         <scene sceneID="Ufq-Id-oe8">
             <objects>
-                <controller title="HIIT" id="zTZ-hc-Lki"/>
+                <controller title="HIIT" id="zTZ-hc-Lki">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="5" id="dah-GA-E5R">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Get ready!" id="LYV-Ol-DrG">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <button width="1" alignment="left" verticalAlignment="center" title="Begin Now!" id="dZH-Nf-LaV">
+                                    <connections>
+                                        <segue destination="noe-tg-Ltd" kind="modal" id="xW9-dH-BVD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="zdB-9S-qHI">
+                            <items>
+                                <label alignment="center" verticalAlignment="bottom" text="Exercises begin in:" textAlignment="center" numberOfLines="5" id="TI7-iK-LDh">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                                <timer alignment="center" verticalAlignment="bottom" format="full" previewedSeconds="10" id="MeC-1K-ZUB">
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <calendarUnit key="units" second="YES"/>
+                                </timer>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="15" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="428" y="-173"/>
+        </scene>
+        <!--Training-->
+        <scene sceneID="aj4-mr-FDt">
+            <objects>
+                <controller title="Training" id="noe-tg-Ltd">
+                    <items>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="Rau-fV-yli">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" textAlignment="left" format="full" previewedSeconds="30" id="NPD-Yg-CkY">
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <calendarUnit key="units" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="Xy0-aN-86H">
+                            <items>
+                                <label alignment="left" text="Exercise Title" numberOfLines="2" id="6pJ-ir-cdS">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Exercise description" numberOfLines="0" id="G8w-Gt-H9T"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="686" y="-173"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="ym3-YK-xfQ">
