@@ -12,9 +12,18 @@ import Foundation
 
 class DescriptionInterfaceController: WKInterfaceController {
     @IBOutlet var descriptionLabel: WKInterfaceLabel!
-    @IBOutlet var movie: WKInterfaceMovie!
+    @IBOutlet var videoThumbnail: WKInterfaceImage!
+    @IBOutlet var videoButton: WKInterfaceButton!
 
     var exercise:Exercise? = nil
+    
+    @IBAction func buttonTapped() {
+        if let videoURL = exercise?.videoURL{
+            presentMediaPlayerControllerWithURL(videoURL, options: nil, completion: {(didPlay, endTime, error) in
+                print(error)
+            })
+        }
+    }
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -26,20 +35,14 @@ class DescriptionInterfaceController: WKInterfaceController {
             self.setTitle(exercise.name)
             self.descriptionLabel.setText(exercise.description)
             
-            if let videoURL = exercise.videoURL{
-                self.movie.setMovieURL(videoURL)
-                HCYoutubeParser.thumbnailForYoutubeURL(exercise.youtubeURL, thumbnailSize: YouTubeThumbnailDefaultMedium, completeBlock: { (image, error) in
-                    if error == nil {
-                        self.movie.setPosterImage(WKImage(image: image))
-                    }
-                    else{
-                        self.movie.setPosterImage(WKImage(imageName: "hiit_background"))
-                    }
-                })
-            }
-            else{
-                self.movie.setHidden(true)
-            }
+            HCYoutubeParser.thumbnailForYoutubeURL(exercise.youtubeURL, thumbnailSize: YouTubeThumbnailDefaultMedium, completeBlock: { (image, error) in
+                if error == nil {
+                    self.videoThumbnail.setImage(image)
+                }
+                else{
+                    self.videoThumbnail.setImage(UIImage(named: "hiit_background"))
+                }
+            })
         }
     }
 

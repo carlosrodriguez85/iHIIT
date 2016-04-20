@@ -149,11 +149,25 @@
                 <controller title="Description" id="6ae-5c-DD4" customClass="DescriptionInterfaceController" customModule="iHIIT_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Exercise Description" numberOfLines="0" id="MPh-o4-lij"/>
-                        <movie width="1" height="100" alignment="center" verticalAlignment="center" id="0Eh-Ko-Sap"/>
+                        <button alignment="left" id="d3c-fn-5zb">
+                            <group key="contentGroup" width="1" alignment="left" id="AtP-bq-wHt">
+                                <items>
+                                    <imageView width="1" height="100" alignment="left" contentMode="scaleAspectFill" id="4Z3-t8-iOM"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="buttonTapped" destination="6ae-5c-DD4" id="1tW-EN-M80"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Tap to play video!" id="mzD-Tr-nnb">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="descriptionLabel" destination="MPh-o4-lij" id="toP-qT-t43"/>
-                        <outlet property="movie" destination="0Eh-Ko-Sap" id="dyZ-Wb-aFm"/>
+                        <outlet property="videoButton" destination="d3c-fn-5zb" id="3cO-jD-pf0"/>
+                        <outlet property="videoThumbnail" destination="4Z3-t8-iOM" id="rpj-7l-Xwh"/>
                     </connections>
                 </controller>
             </objects>
