@@ -28,4 +28,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func creditsTapped() {
+        presentControllerWithName("CreditsInterfaceController", context: nil)
+    }
 }

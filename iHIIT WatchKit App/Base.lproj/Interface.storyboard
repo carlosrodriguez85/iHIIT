@@ -8,16 +8,16 @@
         <!--Credits-->
         <scene sceneID="b5u-94-EBB">
             <objects>
-                <controller title="Credits" id="Pgy-av-VPt"/>
+                <controller identifier="CreditsInterfaceController" title="Credits" id="Pgy-av-VPt"/>
             </objects>
-            <point key="canvasLocation" x="99" y="319"/>
+            <point key="canvasLocation" x="99" y="282"/>
         </scene>
         <!--iHIIT-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller title="iHIIT" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iHIIT_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="10" id="8Re-wK-TiU">
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="8Re-wK-TiU">
                             <items>
                                 <button alignment="left" id="JIf-P6-Dtg">
                                     <group key="contentGroup" width="1" alignment="left" id="p0I-R3-6a7">
@@ -41,14 +41,18 @@
                                         <segue destination="5BM-D2-9L4" kind="push" id="6Xc-z1-v1G"/>
                                     </connections>
                                 </button>
-                                <button width="1" alignment="left" verticalAlignment="bottom" title="Credits" id="lhr-f1-Kkw">
-                                    <connections>
-                                        <segue destination="Pgy-av-VPt" kind="push" id="iA1-Fc-PEB"/>
-                                    </connections>
-                                </button>
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="DdY-VR-kwy">
+                        <items>
+                            <menuItem title="Credits" icon="info" id="WQu-lg-1bW">
+                                <connections>
+                                    <action selector="creditsTapped" destination="AgC-eL-Hgc" id="0dA-8Z-frz"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="99" y="-13"/>
