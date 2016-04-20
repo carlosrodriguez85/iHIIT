@@ -18,12 +18,19 @@ class Exercise{
             return nil
         }
         
-        if let mediumVideo = videos["medium"] as? String {
-            return NSURL(string: mediumVideo)
+        let video:NSURL?
+        
+        if let mediumVideo = videos["small"] as? String {
+            video = NSURL(string: mediumVideo)
+        }
+        else if let mediumVideo = videos["medium"] as? String {
+            video = NSURL(string: mediumVideo)
         }
         else{
-            return nil
+            video = nil
         }
+        
+        return video
     }
     
     static var exercises = [
