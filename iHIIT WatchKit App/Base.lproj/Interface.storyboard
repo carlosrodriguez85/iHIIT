@@ -22,7 +22,9 @@
                                 <button alignment="left" id="JIf-P6-Dtg">
                                     <group key="contentGroup" width="1" alignment="left" id="p0I-R3-6a7">
                                         <items>
-                                            <imageView width="40" height="40" alignment="left" image="ic_play" id="S7T-8s-NYM"/>
+                                            <imageView width="40" height="40" alignment="left" image="ic_play" id="S7T-8s-NYM">
+                                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
                                             <label alignment="center" verticalAlignment="center" text="Start HIIT" textAlignment="left" baselineAdjustment="alignCenters" id="E5v-vv-sRy"/>
                                         </items>
                                     </group>
@@ -33,7 +35,9 @@
                                 <button alignment="left" verticalAlignment="bottom" id="d9X-Cg-uvB">
                                     <group key="contentGroup" width="1" alignment="left" id="EOC-ad-ygu">
                                         <items>
-                                            <imageView width="40" height="40" alignment="left" image="ic_exercises" id="W5t-dQ-hpV"/>
+                                            <imageView width="40" height="40" alignment="left" image="ic_exercises" id="W5t-dQ-hpV">
+                                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
                                             <label alignment="center" verticalAlignment="center" text="Exercises" id="A8X-5p-xF2"/>
                                         </items>
                                     </group>
