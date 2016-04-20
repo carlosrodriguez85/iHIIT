@@ -105,6 +105,11 @@
                                 <label alignment="left" text="Exercise Title" numberOfLines="2" id="6pJ-ir-cdS">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
+                                <button width="1" alignment="left" title="Skip Exercise!" id="cFH-LA-NwR">
+                                    <connections>
+                                        <action selector="skipTapped" destination="noe-tg-Ltd" id="l7S-EP-H7v"/>
+                                    </connections>
+                                </button>
                                 <label alignment="left" text="Exercise description" numberOfLines="0" id="G8w-Gt-H9T"/>
                             </items>
                         </group>

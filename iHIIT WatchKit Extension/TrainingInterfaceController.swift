@@ -54,9 +54,14 @@ class TrainingInterfaceController: WKInterfaceController {
     }
     
     func nextExercise() {
+        NSObject.cancelPreviousPerformRequestsWithTarget(self)
         timer.stop()
         exerciseIndex += 1
         
         showExercise()
+    }
+    
+    @IBAction func skipTapped() {
+        nextExercise()
     }
 }
