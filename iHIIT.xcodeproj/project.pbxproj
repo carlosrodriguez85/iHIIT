@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E892BD91CC82A4600D02E57 /* TrainingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E892BD81CC82A4600D02E57 /* TrainingInterfaceController.swift */; };
+		8E892BDB1CC82F8600D02E57 /* HIITInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E892BDA1CC82F8600D02E57 /* HIITInterfaceController.swift */; };
 		8ED688371CC7A6500005C938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688361CC7A6500005C938 /* AppDelegate.swift */; };
 		8ED688391CC7A6500005C938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688381CC7A6500005C938 /* ViewController.swift */; };
 		8ED6883C1CC7A6500005C938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6883A1CC7A6500005C938 /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		8E892BD81CC82A4600D02E57 /* TrainingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingInterfaceController.swift; sourceTree = "<group>"; };
+		8E892BDA1CC82F8600D02E57 /* HIITInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIITInterfaceController.swift; sourceTree = "<group>"; };
 		8ED688331CC7A6500005C938 /* iHIIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHIIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED688361CC7A6500005C938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED688381CC7A6500005C938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				8ED6887B1CC7DB9B0005C938 /* ExercisesInterfaceController.swift */,
 				8ED6887D1CC7DD960005C938 /* DescriptionInterfaceController.swift */,
 				8E892BD81CC82A4600D02E57 /* TrainingInterfaceController.swift */,
+				8E892BDA1CC82F8600D02E57 /* HIITInterfaceController.swift */,
 			);
 			name = "Interface Controllers";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				8ED6887E1CC7DD960005C938 /* DescriptionInterfaceController.swift in Sources */,
 				8ED688821CC7E37F0005C938 /* HCYoutubeParser.m in Sources */,
 				8ED6887A1CC7D9D20005C938 /* ExerciseRowController.swift in Sources */,
+				8E892BDB1CC82F8600D02E57 /* HIITInterfaceController.swift in Sources */,
 				8ED688761CC7A8AF0005C938 /* Exercise.swift in Sources */,
 				8ED6885E1CC7A6500005C938 /* ExtensionDelegate.swift in Sources */,
 				8E892BD91CC82A4600D02E57 /* TrainingInterfaceController.swift in Sources */,
