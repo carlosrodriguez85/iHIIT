@@ -27,7 +27,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <segue destination="zTZ-hc-Lki" kind="push" id="19K-g7-mEw"/>
+                                        <segue destination="zTZ-hc-Lki" kind="modal" id="19K-g7-mEw"/>
                                     </connections>
                                 </button>
                                 <button alignment="left" id="d9X-Cg-uvB">
@@ -38,7 +38,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <segue destination="5BM-D2-9L4" kind="push" id="6Xc-z1-v1G"/>
+                                        <segue destination="5BM-D2-9L4" kind="modal" id="6Xc-z1-v1G"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" verticalAlignment="bottom" title="Credits" id="lhr-f1-Kkw">
@@ -125,6 +125,9 @@
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="Label" id="x2K-YW-Rb4"/>
                                         </items>
+                                        <connections>
+                                            <segue destination="6ae-5c-DD4" kind="push" id="XbK-hU-9Zi"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="titleLabel" destination="x2K-YW-Rb4" id="ozm-Oa-Cml"/>
@@ -139,6 +142,18 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="428" y="119"/>
+        </scene>
+        <!--Description-->
+        <scene sceneID="TUK-6f-Y3R">
+            <objects>
+                <controller title="Description" id="6ae-5c-DD4">
+                    <items>
+                        <label alignment="left" text="Exercise Description" numberOfLines="0" id="MPh-o4-lij"/>
+                        <movie width="1" height="100" alignment="center" verticalAlignment="center" posterImage="hiit_background" id="0Eh-Ko-Sap"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="688" y="121"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
