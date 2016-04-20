@@ -13,8 +13,8 @@ class Exercise{
     private(set) var description:String
     private(set) var youtubeURL:NSURL
     
-    var videoURL:NSURL? {
-        guard let videos = HCYoutubeParser.h264videosWithYoutubeURL(youtubeURL) else {
+    lazy var videoURL:NSURL? = {
+        guard let videos = HCYoutubeParser.h264videosWithYoutubeURL(self.youtubeURL) else {
             return nil
         }
         
@@ -31,7 +31,7 @@ class Exercise{
         }
         
         return video
-    }
+    }()
     
     static var exercises = [
         Exercise(name: "Jumping Jacks", description: "Jumping to a position with the legs spread wide and the hands touching overhead, sometimes in a clap, and then returning to a position with the feet together and the arms at the sides.", youtubeURL: NSURL(string:"https://www.youtube.com/watch?v=c4DAnQ6DtF8")!),
