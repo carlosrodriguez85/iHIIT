@@ -17,7 +17,12 @@ class ExercisesInterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        
+        table.setNumberOfRows(Exercise.exercises.count, withRowType: "ExerciseRow")
+        for index in 0..<table.numberOfRows {
+            if let controller = table.rowControllerAtIndex(index) as? ExerciseRowController {
+                controller.exercise = Exercise.exercises[index]
+            }
+        }
     }
 
     override func willActivate() {
