@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ED688371CC7A6500005C938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688361CC7A6500005C938 /* AppDelegate.swift */; };
+		8ED688391CC7A6500005C938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688381CC7A6500005C938 /* ViewController.swift */; };
+		8ED6883C1CC7A6500005C938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6883A1CC7A6500005C938 /* Main.storyboard */; };
+		8ED6883E1CC7A6500005C938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6883D1CC7A6500005C938 /* Assets.xcassets */; };
+		8ED688411CC7A6500005C938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6883F1CC7A6500005C938 /* LaunchScreen.storyboard */; };
+		8ED688461CC7A6500005C938 /* iHIIT WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8ED688451CC7A6500005C938 /* iHIIT WatchKit App.app */; };
+		8ED6884C1CC7A6500005C938 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6884A1CC7A6500005C938 /* Interface.storyboard */; };
+		8ED6884E1CC7A6500005C938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6884D1CC7A6500005C938 /* Assets.xcassets */; };
+		8ED688551CC7A6500005C938 /* iHIIT WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8ED688541CC7A6500005C938 /* iHIIT WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8ED6885C1CC7A6500005C938 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6885B1CC7A6500005C938 /* InterfaceController.swift */; };
+		8ED6885E1CC7A6500005C938 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6885D1CC7A6500005C938 /* ExtensionDelegate.swift */; };
+		8ED688601CC7A6500005C938 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6885F1CC7A6500005C938 /* NotificationController.swift */; };
+		8ED688621CC7A6500005C938 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED688611CC7A6500005C938 /* GlanceController.swift */; };
+		8ED688641CC7A6500005C938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED688631CC7A6500005C938 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ED688471CC7A6500005C938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ED6882B1CC7A6500005C938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED688441CC7A6500005C938;
+			remoteInfo = "iHIIT WatchKit App";
+		};
+		8ED688561CC7A6500005C938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ED6882B1CC7A6500005C938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED688531CC7A6500005C938;
+			remoteInfo = "iHIIT WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8ED6886B1CC7A6500005C938 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8ED688551CC7A6500005C938 /* iHIIT WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED6886F1CC7A6500005C938 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8ED688461CC7A6500005C938 /* iHIIT WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8ED688331CC7A6500005C938 /* iHIIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHIIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED688361CC7A6500005C938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8ED688381CC7A6500005C938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8ED6883B1CC7A6500005C938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ED6883D1CC7A6500005C938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ED688401CC7A6500005C938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8ED688421CC7A6500005C938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED688451CC7A6500005C938 /* iHIIT WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iHIIT WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED6884B1CC7A6500005C938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8ED6884D1CC7A6500005C938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ED6884F1CC7A6500005C938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED688541CC7A6500005C938 /* iHIIT WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iHIIT WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED6885A1CC7A6500005C938 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8ED6885B1CC7A6500005C938 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8ED6885D1CC7A6500005C938 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8ED6885F1CC7A6500005C938 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8ED688611CC7A6500005C938 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		8ED688631CC7A6500005C938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ED688651CC7A6500005C938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ED688301CC7A6500005C938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED688511CC7A6500005C938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ED6882A1CC7A6500005C938 = {
+			isa = PBXGroup;
+			children = (
+				8ED688351CC7A6500005C938 /* iHIIT */,
+				8ED688491CC7A6500005C938 /* iHIIT WatchKit App */,
+				8ED688581CC7A6500005C938 /* iHIIT WatchKit Extension */,
+				8ED688341CC7A6500005C938 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED688341CC7A6500005C938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ED688331CC7A6500005C938 /* iHIIT.app */,
+				8ED688451CC7A6500005C938 /* iHIIT WatchKit App.app */,
+				8ED688541CC7A6500005C938 /* iHIIT WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ED688351CC7A6500005C938 /* iHIIT */ = {
+			isa = PBXGroup;
+			children = (
+				8ED688361CC7A6500005C938 /* AppDelegate.swift */,
+				8ED688381CC7A6500005C938 /* ViewController.swift */,
+				8ED6883A1CC7A6500005C938 /* Main.storyboard */,
+				8ED6883D1CC7A6500005C938 /* Assets.xcassets */,
+				8ED6883F1CC7A6500005C938 /* LaunchScreen.storyboard */,
+				8ED688421CC7A6500005C938 /* Info.plist */,
+			);
+			path = iHIIT;
+			sourceTree = "<group>";
+		};
+		8ED688491CC7A6500005C938 /* iHIIT WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8ED6884A1CC7A6500005C938 /* Interface.storyboard */,
+				8ED6884D1CC7A6500005C938 /* Assets.xcassets */,
+				8ED6884F1CC7A6500005C938 /* Info.plist */,
+			);
+			path = "iHIIT WatchKit App";
+			sourceTree = "<group>";
+		};
+		8ED688581CC7A6500005C938 /* iHIIT WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8ED6885B1CC7A6500005C938 /* InterfaceController.swift */,
+				8ED6885D1CC7A6500005C938 /* ExtensionDelegate.swift */,
+				8ED6885F1CC7A6500005C938 /* NotificationController.swift */,
+				8ED688611CC7A6500005C938 /* GlanceController.swift */,
+				8ED688631CC7A6500005C938 /* Assets.xcassets */,
+				8ED688651CC7A6500005C938 /* Info.plist */,
+				8ED688591CC7A6500005C938 /* Supporting Files */,
+			);
+			path = "iHIIT WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8ED688591CC7A6500005C938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED6885A1CC7A6500005C938 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ED688321CC7A6500005C938 /* iHIIT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED688701CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT" */;
+			buildPhases = (
+				8ED6882F1CC7A6500005C938 /* Sources */,
+				8ED688301CC7A6500005C938 /* Frameworks */,
+				8ED688311CC7A6500005C938 /* Resources */,
+				8ED6886F1CC7A6500005C938 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ED688481CC7A6500005C938 /* PBXTargetDependency */,
+			);
+			name = iHIIT;
+			productName = iHIIT;
+			productReference = 8ED688331CC7A6500005C938 /* iHIIT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ED688441CC7A6500005C938 /* iHIIT WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED6886C1CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT WatchKit App" */;
+			buildPhases = (
+				8ED688431CC7A6500005C938 /* Resources */,
+				8ED6886B1CC7A6500005C938 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ED688571CC7A6500005C938 /* PBXTargetDependency */,
+			);
+			name = "iHIIT WatchKit App";
+			productName = "iHIIT WatchKit App";
+			productReference = 8ED688451CC7A6500005C938 /* iHIIT WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8ED688531CC7A6500005C938 /* iHIIT WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED688681CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT WatchKit Extension" */;
+			buildPhases = (
+				8ED688501CC7A6500005C938 /* Sources */,
+				8ED688511CC7A6500005C938 /* Frameworks */,
+				8ED688521CC7A6500005C938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iHIIT WatchKit Extension";
+			productName = "iHIIT WatchKit Extension";
+			productReference = 8ED688541CC7A6500005C938 /* iHIIT WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ED6882B1CC7A6500005C938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Everyware Technologies";
+				TargetAttributes = {
+					8ED688321CC7A6500005C938 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8ED688441CC7A6500005C938 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8ED688531CC7A6500005C938 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8ED6882E1CC7A6500005C938 /* Build configuration list for PBXProject "iHIIT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ED6882A1CC7A6500005C938;
+			productRefGroup = 8ED688341CC7A6500005C938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ED688321CC7A6500005C938 /* iHIIT */,
+				8ED688441CC7A6500005C938 /* iHIIT WatchKit App */,
+				8ED688531CC7A6500005C938 /* iHIIT WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED688311CC7A6500005C938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED688411CC7A6500005C938 /* LaunchScreen.storyboard in Resources */,
+				8ED6883E1CC7A6500005C938 /* Assets.xcassets in Resources */,
+				8ED6883C1CC7A6500005C938 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED688431CC7A6500005C938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED6884E1CC7A6500005C938 /* Assets.xcassets in Resources */,
+				8ED6884C1CC7A6500005C938 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED688521CC7A6500005C938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED688641CC7A6500005C938 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ED6882F1CC7A6500005C938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED688391CC7A6500005C938 /* ViewController.swift in Sources */,
+				8ED688371CC7A6500005C938 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED688501CC7A6500005C938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED688601CC7A6500005C938 /* NotificationController.swift in Sources */,
+				8ED6885E1CC7A6500005C938 /* ExtensionDelegate.swift in Sources */,
+				8ED6885C1CC7A6500005C938 /* InterfaceController.swift in Sources */,
+				8ED688621CC7A6500005C938 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ED688481CC7A6500005C938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED688441CC7A6500005C938 /* iHIIT WatchKit App */;
+			targetProxy = 8ED688471CC7A6500005C938 /* PBXContainerItemProxy */;
+		};
+		8ED688571CC7A6500005C938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED688531CC7A6500005C938 /* iHIIT WatchKit Extension */;
+			targetProxy = 8ED688561CC7A6500005C938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8ED6883A1CC7A6500005C938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED6883B1CC7A6500005C938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ED6883F1CC7A6500005C938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED688401CC7A6500005C938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8ED6884A1CC7A6500005C938 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED6884B1CC7A6500005C938 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ED688661CC7A6500005C938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ED688671CC7A6500005C938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ED688691CC7A6500005C938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iHIIT WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8ED6886A1CC7A6500005C938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iHIIT WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		8ED6886D1CC7A6500005C938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = iHIIT_WatchKit_Extension;
+				INFOPLIST_FILE = "iHIIT WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8ED6886E1CC7A6500005C938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = iHIIT_WatchKit_Extension;
+				INFOPLIST_FILE = "iHIIT WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		8ED688711CC7A6500005C938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iHIIT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8ED688721CC7A6500005C938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iHIIT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.everywaretech.iHIIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED6882E1CC7A6500005C938 /* Build configuration list for PBXProject "iHIIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED688661CC7A6500005C938 /* Debug */,
+				8ED688671CC7A6500005C938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED688681CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED688691CC7A6500005C938 /* Debug */,
+				8ED6886A1CC7A6500005C938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8ED6886C1CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED6886D1CC7A6500005C938 /* Debug */,
+				8ED6886E1CC7A6500005C938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8ED688701CC7A6500005C938 /* Build configuration list for PBXNativeTarget "iHIIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED688711CC7A6500005C938 /* Debug */,
+				8ED688721CC7A6500005C938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ED6882B1CC7A6500005C938 /* Project object */;
+}
