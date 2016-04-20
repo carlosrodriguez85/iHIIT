@@ -20,9 +20,19 @@ class DescriptionInterfaceController: WKInterfaceController {
     private var videoURL:NSURL? = nil
     
     @IBAction func buttonTapped() {
-        if let videoURL = videoURL {
-            presentMediaPlayerControllerWithURL(videoURL, options: nil, completion: {(didPlay, endTime, error) in
-                print(error)
+        if let exercise = exercise, let videoURL = videoURL {
+            presentMediaPlayerControllerWithURL(videoURL, options: nil, completion: {(_, _, error) in
+                if error != nil{
+                    let actions = [
+                        WKAlertAction(title: "Cancel", style: .Cancel, handler: {
+                            // do nothing, it is dismissed by default
+                        }),
+                        WKAlertAction(title: "Open in Phone", style: .Cancel, handler: {
+                            self.updateUserActivity("es.everywaretech.iHIIT.description", userInfo: nil, webpageURL: exercise.youtubeURL)
+                        })
+                    ]
+                    self.presentAlertControllerWithTitle("Error", message: "The video format is not supported by the Watch", preferredStyle: .Alert, actions: actions)
+                }
             })
         }
     }
