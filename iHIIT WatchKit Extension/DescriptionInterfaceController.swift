@@ -17,8 +17,10 @@ class DescriptionInterfaceController: WKInterfaceController {
 
     var exercise:Exercise? = nil
     
+    private var videoURL:NSURL? = nil
+    
     @IBAction func buttonTapped() {
-        if let videoURL = exercise?.videoURL{
+        if let videoURL = videoURL {
             presentMediaPlayerControllerWithURL(videoURL, options: nil, completion: {(didPlay, endTime, error) in
                 print(error)
             })
@@ -43,6 +45,8 @@ class DescriptionInterfaceController: WKInterfaceController {
                     self.videoThumbnail.setImage(UIImage(named: "hiit_background"))
                 }
             })
+            
+            self.videoURL = exercise.videoURL
         }
     }
 
