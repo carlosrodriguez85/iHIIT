@@ -43,7 +43,7 @@
                                 </button>
                                 <button width="1" alignment="left" verticalAlignment="bottom" title="Credits" id="lhr-f1-Kkw">
                                     <connections>
-                                        <segue destination="Pgy-av-VPt" kind="modal" id="iA1-Fc-PEB"/>
+                                        <segue destination="Pgy-av-VPt" kind="push" id="iA1-Fc-PEB"/>
                                     </connections>
                                 </button>
                             </items>
@@ -126,7 +126,7 @@
                                             <label alignment="left" verticalAlignment="center" text="Label" id="x2K-YW-Rb4"/>
                                         </items>
                                         <connections>
-                                            <segue destination="6ae-5c-DD4" kind="push" id="XbK-hU-9Zi"/>
+                                            <segue destination="6ae-5c-DD4" kind="modal" id="EvM-zm-KTK"/>
                                         </connections>
                                     </group>
                                     <connections>

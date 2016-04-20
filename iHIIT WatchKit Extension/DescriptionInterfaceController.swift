@@ -14,10 +14,19 @@ class DescriptionInterfaceController: WKInterfaceController {
     @IBOutlet var descriptionLabel: WKInterfaceLabel!
     @IBOutlet var movie: WKInterfaceMovie!
 
+    var exercise:Exercise? = nil
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        if let exercise = context as? Exercise {
+            self.exercise = exercise
+            
+            self.setTitle(exercise.name)
+            descriptionLabel.setText(exercise.description)
+            movie.setMovieURL(exercise.videoURL)
+        }
     }
 
     override func willActivate() {
